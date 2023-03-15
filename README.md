@@ -1,2 +1,3 @@
 # Course_Work
  ...
+ $sqrt(y^x)$
