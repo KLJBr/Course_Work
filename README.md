@@ -35,20 +35,20 @@
 + Разделение данных:\
      Созданный дата фрейм был разделен на 2 выборки, тренировочную, которая содержит 70% данных, и отложенную - 30%. Разделение учитывает, 
      как особенность каждого эксперимента, так и то что данные содержатся в различных сигналах.
-+ Применение моделей машинного обучения для отображения пространств:\
-     Сначала были применены 12 моделей "из коробки":
-         + DummyRegressor
-         + LinearRegression
-         + BayesianRidge
-         + ElasticNet
-         + SVR
-         + KNeighborsRegressor
-         + DecisionTreeRegressor
-         + RandomForestRegressor
-         + GradientBoostingRegressor
-         + CatBoostRegressor
-         + LGBMRegressor
-         + XGBRegressor
++ Применение моделей машинного обучения для отображения пространств:
+  Сначала были применены 12 моделей "из коробки":
+     + DummyRegressor
+     + LinearRegression
+     + BayesianRidge
+     + ElasticNet
+     + SVR
+     + KNeighborsRegressor
+     + DecisionTreeRegressor
+     + RandomForestRegressor
+     + GradientBoostingRegressor
+     + CatBoostRegressor
+     + LGBMRegressor
+     + XGBRegressor
      После чего с помощью групповой кросс-валидации(GroupKFold) и сетки(GridSearchCV) были подобраны параметры моделей. 
 + Сравнение моеделей до и после подбора параметров:
      + Сравнение качества моделей проводилось с помощью метрики $R^2$, средней квадратической ошибкой(MSE) и средней абсолютной ошибкой(MAE).
